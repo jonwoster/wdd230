@@ -1,5 +1,5 @@
-const d = new Date();
-const yearvalue = d.getFullYear();
+let d = new Date();
+let yearvalue = d.getFullYear();
 document.querySelector("#copyright-year").textContent = yearvalue;
 
 let lastmod = document.lastModified;
