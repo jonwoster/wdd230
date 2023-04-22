@@ -1,7 +1,7 @@
 
 const d = new Date();
-const year = d.getFullYear();
-document.querySelector("#copyright-year").textContent = year;
+const yearvalue = d.getFullYear();
+document.querySelector("#copyright-year").textContent = yearvalue;
 
 let lastmod = document.lastModified;
 document.getElementById("last-updated").innerHTML = lastmod;
