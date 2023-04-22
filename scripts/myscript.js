@@ -1,7 +1,7 @@
 let d = new Date();
-let yearvalue = d.getFullYear();
-let x = document.getElementById("copyright-message");
-x.querySelector("#copyright-year").innerHTML = "yearvalue";
+let yearmod = d.getFullYear();
+let item = document.querySelector(".copyright-year")
+item.textContent = yearmod;
 
 let lastmod = document.lastModified;
 document.getElementById("last-updated").innerHTML = lastmod;

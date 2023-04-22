@@ -55,12 +55,12 @@ border-bottom: 1px solid  black;
 
 footer{
     background-color: #b3ecff;
-  height: 75px;
     border-radius: 15px;
     text-align: center;
     font-weight: bold;
   box-shadow: 15px 0px 50px 15px grey;
   width: 40%;
+  padding: 10px;
 }
 
 .updated-date{
