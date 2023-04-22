@@ -11,13 +11,12 @@ body {
 
 header{
     background-color: #b3ecff;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     border-radius: 15px;
     text-align: center;
-    font-weight: bold;
     box-shadow: 15px 15px 50px 15px grey;
-  width: 40%;
+  width: 35%;
   text-shadow: 0px 0px 5px grey;
 }
 
@@ -59,8 +58,8 @@ footer{
     text-align: center;
     font-weight: bold;
   box-shadow: 15px 0px 50px 15px grey;
-  width: 40%;
-  padding: 10px;
+  width: 35%;
+  padding: 0px 5px 0px 0px;
 }
 
 .updated-date{
