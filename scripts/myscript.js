@@ -1,6 +1,6 @@
 let d = new Date();
 let yearmod = d.getFullYear();
-let item = document.querySelector(".copyright-year")
+let item = document.querySelector("#copyright-year")
 item.textContent = yearmod;
 
 let lastmod = document.lastModified;
