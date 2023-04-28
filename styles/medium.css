@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em) {
+    header {
+        font-size: 1.2em;
+    }
+    main {
+        font-size: 1em;
+    }
+    .asterisk{
+        font-size: 1em;
+      }
+    footer {
+        font-size: 1em;
+    }
+    .updated-date{
+        font-size: 1em;
+        color: blue;
+      }
+  }
+  
