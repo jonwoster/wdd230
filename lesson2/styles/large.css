@@ -1,0 +1,31 @@
+@media only screen and (min-width: 64em) {
+    header {
+        font-size: 1em;
+    }
+    main {
+        font-size: 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 130px;
+    }
+
+    .example1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+      
+    .example2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+      
+    .example3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+   
+    footer {
+        font-size: 1em;
+    }
+  
+  }
+  
