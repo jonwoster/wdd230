@@ -1,0 +1,172 @@
+
+* {
+		box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	height: 100vh;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	width: auto;
+}
+
+header,
+footer {
+	color: #ffffff;
+	background-color: #002868;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 10px;
+	text-align: center;
+}
+
+header,
+nav,
+footer {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #0490fb;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #03943d;
+	color: yellow;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 1rem;
+	text-align: left;
+	max-width: 960px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.logo {
+	grid-column: 1;
+	grid-row: 2;
+	margin: auto;
+}
+
+.logo-title {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.purpose {
+	grid-column: 1;
+	grid-row: 4;
+	text-align: left;
+	margin: 15px;
+}
+
+.purpose-title {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.personas {
+	grid-column: 1;
+	grid-row: 4;	
+	margin: 15px;
+}
+
+.personas-title {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.scenarios {
+	grid-column: 1;
+	grid-row: 2;
+	margin: 15px;
+}
+
+.scenarios-title {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.colors {
+	grid-column: 1;
+	grid-row: 2;
+	margin: 15px;
+}
+
+.colors-title {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.typography {
+	grid-column: 1;
+	grid-row: 4;	
+	margin: 15px;
+}
+
+.typography-title {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+#navy {
+	background-color: #002868;
+	color: white;
+}
+
+#sky-blue {
+	background-color: #0490fb;
+}
+
+#forest-green {
+	background-color: #03943d;
+}
+
+#white {
+	background-color: ffffff;
+}
+         
+li {
+	margin: 10px;
+}
+
+footer {
+	display: flex;
+	margin-top: 50px;
+	padding: 1rem;
+	justify-content: center;
+	font-weight: 700;
+
+}
+

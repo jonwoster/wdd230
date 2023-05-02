@@ -1,0 +1,66 @@
+@media only screen and (min-width: 32.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+		font-size: 1.1rem;
+	}
+
+	.logo-title {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	
+	.logo {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	.purpose-title {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.purpose {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.personas-title {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.personas {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.colors {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	.colors-title {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	
+	.typography {
+		grid-column: 2;
+		grid-row: 2;	
+	}
+	
+	.typography-title {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	
+}
+
+
