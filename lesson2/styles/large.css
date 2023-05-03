@@ -5,18 +5,36 @@
     }
 
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding-top: 130px;
         font-size: 1.2rem;
     }
-
+    .example1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+      
+    .example2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+      
+    .example3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+   
+    footer {
+        font-size: .8em;
+        width: 90%;
+    }
    
     footer {
         font-size: 1em;
         width: 80%;
     }
 
-    
+
   
   }
   
