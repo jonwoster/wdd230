@@ -37,7 +37,7 @@
 
     nav {
 		background-color: #002868;
-		position: fixed;
+		position: absolute;
 		top: 15px;
 		right: 15px;
 	}
