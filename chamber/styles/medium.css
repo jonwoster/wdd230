@@ -39,6 +39,7 @@
 		grid-row: 1;
 		grid-column: 1/2;
 		text-align: right;
+		margin-left: 10px;
 	}
 	
 	#group1-mainfooter {
@@ -51,11 +52,20 @@
 	#group2-mainfooter {
 		grid-row: 1;
 		grid-column: 3/5;
+		margin: auto;
 	}
 
-	.basefooter {
+	.basefooter ul {
 		display: flex;
-		flex-direction: row;
+		flex-wrap: wrap;
+		width: 95%;
+		justify-content: center;
+		align-items: bottom;
+	}
+
+	.basefooter li + li::before {
+		padding: 5px;
+		content: " | ";
 	}
 	
 }
