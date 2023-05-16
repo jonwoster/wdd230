@@ -60,7 +60,6 @@
 		flex-wrap: wrap;
 		width: 95%;
 		justify-content: center;
-		align-items: bottom;
 	}
 
 	.basefooter li + li::before {
