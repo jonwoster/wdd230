@@ -5,7 +5,7 @@
     }
 
 	#buttons {
-		grid-row: 1;
+		grid-row: 2;
 		grid-column: 4/5;
 		display: flex;
 		align-items: center;
@@ -13,7 +13,7 @@
 
     nav {
 		background-color: #002868;
-		grid-row: 1;
+		grid-row: 2;
 		grid-column: 3/4;
 	}
 	
