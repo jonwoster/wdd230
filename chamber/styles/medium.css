@@ -1,6 +1,5 @@
 @media only screen and (min-width: 32.5em) {
 	main {
-		height: 600px;
 		grid-template-columns: repeat(5, 1fr);
 	}
 	

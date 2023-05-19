@@ -27,7 +27,7 @@ x.onclick = togglemenu;
 
 //Use JavaScript to display a banner on Mondays or Tuesdays only at the very top of the page that says 
 //🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m." Make sure your design matches your schema for the site.
-if(dayofweek == 1 || dayofweek == 4) {
+if(dayofweek == 1 || dayofweek == 2) {
     // create variable that holds reference to header
     const header = document.querySelector('header');
     // create div element to hold the reminder, use mtgreminder as the variable
@@ -43,7 +43,7 @@ if(dayofweek == 1 || dayofweek == 4) {
     // Set styling for the reminder
     mtgreminder.style.color = "white";
     mtgreminder.style.backgroundColor = "#0490fb";
-    mtgreminder.style.fontSize = ".7rem";
+    mtgreminder.style.fontSize = ".9rem";
     mtgreminder.style.justifyContent = "center";
     mtgreminder.style.margin = "auto";
     mtgreminder.style.gridRow = "1";

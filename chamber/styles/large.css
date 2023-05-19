@@ -1,6 +1,6 @@
 @media only screen and (min-width: 64em) {
 	
-	button {
+	header button {
         display: none;
     }
 
