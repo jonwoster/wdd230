@@ -215,11 +215,16 @@ main {
 #join {
 	grid-row: 4;
 	grid-column: 1;
+	color: white;
+	text-shadow: #03943d 5px 0px 10px;
 }
 #join button {
 	background-color: #0490fb;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px 2px #03943d;
+	font-size: 1.5rem;
+	color: white;
+	text-shadow: #03943d 5px 0px 10px;
 }
 
 #event {
