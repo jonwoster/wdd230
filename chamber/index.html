@@ -21,7 +21,7 @@
 <body>
 <header>
     <div id="site-branding">
-        <img id="header-logo" src="images/leadville-chamber-logo-small.png" alt="Leadville Chamber Small Logo">
+        <img id="header-logo" src="images/leadville-chamber-logo-small.webp" alt="Leadville Chamber Small Logo">
         <h1><span id="chambername"><span id="leadville">Leadville</span><br>Chamber of Commerce</span></h1>
     </div>
     <div id="buttons">
@@ -93,8 +93,9 @@
 
     <div class="mainsections" id="weather">
         <h2>Weather</h2>
-        <p>Storm's a brewin! Widget to go here eventually</p>
-        <p>Blah, blah, blah, blah</p>
+        <p>Current Temp (F): <span id="tempvalue">43.6</span></p>
+        <p>Current Windspeed (mph): <span id="speedvalue">5.2</span></p>
+        <p>Windchill (F): <span id="chillvalue"></span></p>
     </div>
 	
 </main>
@@ -102,7 +103,7 @@
 <footer>
 
     <div class="mainfooter">
-        <img id = "footerlogo" src="images/leadville-chamber-logo-medium.png" alt="Leadville Chamber logo">
+        <img id = "footerlogo" src="images/leadville-chamber-logo-medium.webp" alt="Leadville Chamber logo">
         <div id="group1-mainfooter">
             <p>0000 Imaginary Street<br>Leadville, Colorado</p>
         </div>
@@ -122,6 +123,7 @@
     </div>
     
     <script src="scripts/chamberscript.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </footer>
 </body>
