@@ -202,9 +202,10 @@ picture.myherophoto {
 picture.myherophoto img {
     width: 100%;
 }
-picture.myherophoto figcaption {
-    text-align: center;
+#caption {
+    text-align: left;
     font-size: .7rem;
+	margin: 0;
 }
 
 #news {
