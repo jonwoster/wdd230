@@ -42,10 +42,16 @@
 		grid-row: 3/4;
 		grid-column: 2/4;
 	}
-	#spot {
+	.spotsection {
 		grid-row: 1/4;
 		grid-column: 4/5;
+		display: flex;
+		flex-direction: column;
 	}
+	#spot1, #spot2, #spot3 {
+		display: block;
+	}
+
 	#join {
 		grid-row: 3/4;
 		grid-column: 1/2;

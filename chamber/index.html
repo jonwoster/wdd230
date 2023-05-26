@@ -44,8 +44,13 @@
 
 <main>
 	<div class="mainsections" id="hero">
-        <img src="images/downtown.jpg" alt="Image of Downtown Leadville">
-        <span id="downtown-imagecredit">Image By Dennis Adams, Federal Highway Administration</span>
+        <picture class="myherophoto">
+            <source srcset="images/wdd230-org-med600.webp" media="(min-width: 600px) and (max-width: 999px)">
+            <source srcset="images/wdd230-org-large900.webp" media="(min-width: 1000px)">
+            <img src="images/wdd230-org-small300.webp" alt="Image of meeting">
+            <figcaption>Image By Dennis Adams, Federal Highway Administration</figcaption>
+        </picture>
+
         <div id="heromessage">
             <p>Let's grow business in Leadville!</p>
         </div>
@@ -61,18 +66,26 @@
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
-    <div class="mainsections" id="spot">
-        <div class = "spots">
+    <div class="mainsections spotsection">
+        <div class = "spots" id="spot1">
             <h3>Sally's Dog Walking</h3>
             <p>Rain, blizzard, or shine, I'm there! <br>Full-service dog concierge, walker, sitter, chauffeur. Have shoes, boots, snowshoes, 4x4, so I'm covered!</p>
             <p>Text or Call: XXX-XXX-XXXX</p>
         </div>
-        <div class = "spots">
+        <div class = "spots" id="spot2">
             <h3>Descartes Math Tutoring</h3>
             <p>Having trouble keeping up in math at school? Homeschooling challenges?</p>
             <p>I can help with math, from kindergarten to 12th grade to SAT prep.</p>
             <p>Evenings and Weekends</p>
             <p>B.S. Mathematics, CSU</p>
+            <p>Text or Call: YYY-YYY-YYYY</p>
+        </div>
+
+        <div class = "spots" id="spot3">
+            <h3>Medieval Sharpening Services</h3>
+            <p>If it needs to be sharpened, we will do it!</p>
+            <p>Scissors, knives, machetes, battle axes, etc.</p>
+            <p>Pick-up, drop-off, or mail service.</p>
             <p>Text or Call: YYY-YYY-YYYY</p>
         </div>
 

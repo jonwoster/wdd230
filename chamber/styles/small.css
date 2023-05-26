@@ -184,7 +184,7 @@ main {
 
 #heromessage {
 	position: absolute;
-	top: 40px;
+	bottom: 100px;
 	left: 50px;
 	background: radial-gradient(white, #0490fb);
 	border: 1px solid #0490fb;
@@ -194,22 +194,34 @@ main {
 	opacity: 0.9;
 }
 
-#downtown-imagecredit {
-	font-size: .5rem;
+picture.myherophoto {
+    width: 100%;
+    margin: 0;
+	padding: 0;
+}
+picture.myherophoto img {
+    width: 100%;
+}
+picture.myherophoto figcaption {
+    text-align: center;
+    font-size: .7rem;
 }
 
 #news {
 	grid-row: 2;
 	grid-column: 1;
 }
-#spot {
+.spotsection {
 	grid-row: 3;
 	grid-column: 1;
 }
 .spots {
 	border: 1px solid white;
 	text-shadow: #03943d 5px 0px 10px;
-	margin: 10px;
+	margin: 5px;
+}
+#spot3 {
+	display: none;
 }
 
 #join {
