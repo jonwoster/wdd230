@@ -1,3 +1,5 @@
+/* leaned heavily upon 
+https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Loading */
 
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
