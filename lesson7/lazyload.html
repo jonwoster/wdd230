@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Lazy loading, page for learning">
+    <title>Jonathan Woster's Lazy Loading Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header></header>
+
+
+    <main>
+        <!-- The simple page only needs to contain an h1 and five or six picture elements with an img element.
+        The picture elements need to be in one column.
+        The images should have dimensions of 300x400 pixels.
+        You may use your own images or external placeholders. 
+        ► Include a placeholder image that has one background color and some simple text like 'placeholder'. 
+            This will be loaded into all six img src attributes first
+        ► Replace the placeholder image with the real images as soon as each image is loaded from its source 
+            using an instance of the IntersectionObserver() JavaScript object. Your images should load when a user 
+            scrolls down the screen as needed.
+        ► Use some sort of transition from the placeholder to the real image as illustrated in the reading.
+        -->
+        
+        <h1>Jonathan's Lazy Loading Page</h1>
+        <picture>
+            <img src="images/opt_placeholder.webp" data-src="images/sized_old_ferraris.webp" alt="Old Ferraris">
+        </picture>
+        <picture>
+            <img src="images/opt_placeholder.webp" data-src="images/sized_factory.webp" alt="Old Ferrari factory">
+        </picture>
+        <picture>
+            <img src="images/opt_placeholder.webp" data-src="images/sized_climax_mine.webp" alt="Climax mine">
+        </picture>
+        <picture>
+            <img src="images/opt_placeholder.webp" data-src="images/sized_leadville.webp" alt="Old Leadville">
+        </picture>
+        <picture>
+            <img src="images/opt_placeholder.webp" data-src="images/sized_miner.webp" alt="Miner with cart">
+        </picture>
+        <picture>
+            <img src="images/opt_placeholder.webp" data-src="images/sized_panning.webp" alt="Panning for gold">
+        </picture>
+
+    </main>
+
+    <footer>
+        <script src="scripts/loadingscript.js"></script>
+    </footer>
+
+</body>
