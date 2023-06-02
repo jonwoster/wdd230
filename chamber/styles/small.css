@@ -321,6 +321,10 @@ footer ul {
 	text-align: left;
 }
 
+.discoverpagemain ul {
+	text-align: left;
+}
+
 #discoverpic1 {
 	grid-row: 2;
 	margin: auto;
