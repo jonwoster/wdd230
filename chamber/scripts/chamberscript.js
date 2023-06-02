@@ -49,3 +49,16 @@ if(dayofweek == 1 || dayofweek == 2) {
     mtgreminder.style.gridRow = "1";
 	mtgreminder.style.gridColumn = "1/5";
 }
+
+//***************Days since last visit for the footer *********************************
+// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
+const msToDays = 84600000;
+
+let today = Date.now();
+let lastvisitdate= Number(localStorage.getItem("lastvisit-ls"));
+
+const elapseddays = Math.round((today - lastvisitdate) / msToDays);
+
+document.querySelector('.dayselapsed').textContent = elapseddays;
+
+localStorage.setItem("lastvisit-ls", today);
