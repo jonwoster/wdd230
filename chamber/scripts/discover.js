@@ -41,6 +41,10 @@ let lastvisitdate= Number(localStorage.getItem("lastvisit-ls"));
 
 const elapseddays = Math.round((today - lastvisitdate) / msToDays);
 
-document.querySelector('.dayselapsed').textContent = elapseddays;
+if (elapseddays > 10000) {
+  document.querySelector('.dayselapsed').textContent = "Welcome first timer!";
+} else {
+  document.querySelector('.dayselapsed').textContent = elapseddays;
+}
 
 localStorage.setItem("lastvisit-ls", today);
