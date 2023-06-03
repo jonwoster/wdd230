@@ -73,6 +73,9 @@
 	
 }
 
+.discoverpagemain {
+	grid-template-columns: 1fr;
+}
 
 .discoverpagemain img:hover{
 	box-shadow: 0 0 30px #333;
