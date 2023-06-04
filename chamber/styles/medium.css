@@ -75,9 +75,8 @@
 		grid-template-columns: 1fr;
 	}
 
-	#discoverpic1 img:hover, #discoverpic2 img:hover, #discoverpic3 img:hover, 
-	#discoverpic4 img:hover, #discoverpic5 img:hover { 
-	box-shadow: 0 0 30px black;
+	.discoverpagemain img:hover {
+		box-shadow: 0px 0px 30px black;
 	}
 
 }

@@ -9,7 +9,7 @@ const loadImages = (image) => {
 
 const options = {
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.25,
   };
 
 if ("IntersectionObserver" in window) {
@@ -32,19 +32,3 @@ else {
     });
 }
 
-//***************Days since last visit for the footer *********************************
-// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
-const msToDays = 84600000;
-
-let today = Date.now();
-let lastvisitdate= Number(localStorage.getItem("lastvisit-ls"));
-
-const elapseddays = Math.round((today - lastvisitdate) / msToDays);
-
-if (elapseddays > 10000) {
-  document.querySelector('.dayselapsed').textContent = "Welcome first timer!";
-} else {
-  document.querySelector('.dayselapsed').textContent = elapseddays;
-}
-
-localStorage.setItem("lastvisit-ls", today);

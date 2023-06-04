@@ -1,9 +1,9 @@
 
 const temp = document.querySelector("#tempvalue");
-const tempval = parseFloat(temp.innerHTML);
+const tempval = parseFloat(temp.textContent);
 
 const speed = document.querySelector("#speedvalue");
-const speedval = parseFloat(speed.innerHTML);
+const speedval = parseFloat(speed.textContent);
 
 const chill = document.querySelector("#chillvalue");
 
