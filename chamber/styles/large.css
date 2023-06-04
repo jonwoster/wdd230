@@ -65,7 +65,10 @@
 		grid-column: 1/2;
 	}	
 
-	
+	.mainsections {
+		padding-left: 30px;
+		padding-right: 30px;
+	}	
 
 }
   
