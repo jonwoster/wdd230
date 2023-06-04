@@ -163,7 +163,8 @@ main {
 	text-align: center;
 	justify-items: center;
 	justify-content: center;
-	margin-left: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .mainsections h2 {
