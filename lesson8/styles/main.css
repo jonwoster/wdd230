@@ -1,0 +1,50 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-size: 16px;
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	width: auto;
+}
+
+table {
+	margin: 20px 0 0 50px;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	border: 0.5px solid rgb(194, 194, 194);
+	text-align: center;
+}
+
+th {
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	padding: 15px;
+}
+
+th.headertitle {
+	background-color: rgb(53, 53, 53);
+	border: 0.5px solid rgb(38, 38, 38);
+}
+
+.leftcolumn {
+	font-weight: bold;
+}
+
+caption {
+	padding: 5px;
+	caption-side: bottom;
+	color: rgb(85, 84, 84);
+	font-size: 0.8rem;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(240, 240, 240);
+}
