@@ -70,6 +70,15 @@
 		padding-right: 30px;
 	}	
 
+	/*--------------Form Styling -------------------*/
+	form label input, form textarea, form fieldset, form input.submitBtn {
+		max-width: 40rem;
+	}
+
+
+
+
+
 }
   
 

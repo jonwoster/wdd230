@@ -79,6 +79,13 @@
 		box-shadow: 0px 0px 30px black;
 	}
 
+	/*-----  Form styling ----------*/
+	.formmain {
+		display: block;
+	}
+
+
+
 }
 
 

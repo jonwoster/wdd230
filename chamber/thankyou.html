@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Discover Page for Leadville Chamber">
+    <title>Discover: Leadville Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header>
+    <div id="site-branding">
+        <img id="header-logo" src="images/leadville-chamber-logo-small.webp" alt="Leadville Chamber Small Logo">
+        <h1><span id="chambername"><span id="leadville">Leadville</span><br>Chamber of Commerce</span></h1>
+    </div>
+    <div id="buttons">
+        <div><a href="https://www.facebook.com/" class="fa fa-facebook" title ="Facebook Link"></a></div>
+        <div><a href="https://twitter.com/" class="fa fa-twitter" title = "Twitter Link"></a></div>
+        <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
+    </div>
+    <div id="header-date"></div>
+
+    <nav>
+        <ul id="primary-nav">
+            <li><a href="./">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="#">Page 4 name here</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<main class = "thanksmain">
+    <div class = "thanks">
+        <p>Thank you for signing up to join us!</p>
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="mainfooter">
+        <img id = "footerlogo" src="images/leadville-chamber-logo-medium.webp" alt="Leadville Chamber logo">
+        <div id="group1-mainfooter">
+            <p>0000 Imaginary Street<br>Leadville, Colorado</p>
+        </div>
+        <div id="group2-mainfooter">
+            <p>jonathanwoster@gmail.com</p>
+            <a id="maplink" href="https://goo.gl/maps/K3oc4ujftivbUxCD7">Map link</a>
+        </div>
+    </div>
+
+    <div class="basefooter">
+        <ul>
+            <li>&copy;<span id="copyright-year"></span> Leadville Chamber</li>
+            <li id="basefooter-name">Jonathan Woster</li>
+            <li>WDD 230</li>
+            <li>Last Modification: <span id="last-updated"></span></li>
+            <li>Days since last visit: <span class="dayselapsed"></span></li>
+        </ul>
+    </div>
+    
+    <script src="scripts/chamberscript.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/discover.js"></script>
+
+</footer>
+</body>
