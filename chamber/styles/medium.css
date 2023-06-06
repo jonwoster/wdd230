@@ -83,7 +83,19 @@
 	.formmain {
 		display: block;
 	}
+	.leveldescriptions {
+		display: block;
+		margin-right: 15px;
+	}
+	
+	.membertype {
+		display: flex;
+		flex-direction: row;
+	}
 
+	select {
+		min-width: 16rem;
+	}
 
 
 }

@@ -48,18 +48,29 @@
         <label>Last Name* <input type="text" name="lname" required></label>
         <label>Email* <input type="email" name="email" placeholder="soandso@interweb.com" required></label>
         <label>Name of Business* <input type="text" name="busname" required></label>
-        <label>Business Position <input type="text" name="position" pattern="[a-zA-Z\s-]{7,}"></label> <!--only accepts alpha characters, hyphens, and spaces with a minimum of seven characters. -->
+        <label>Business Position <input type="text" name="position" pattern="[a-zA-Z\s-]{7,}"></label> 
         <label>Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
 
         <label class="top">Business Description <textarea name="textarea"></textarea></label>
-
-        <fieldset>
-            <legend>Membership Level</legend>
-            <label></label><input type="radio" name="memLevel" value="nonprofit"> Non-Profit</label>
-            <label></label><input type="radio" name="memLevel" value="bronze"> Bronze</label>
-            <label></label><input type="radio" name="memLevel" value="silver"> Silver</label>
-            <label></label><input type="radio" name="memLevel" value="gold"> Gold</label>
-        </fieldset>
+        
+        <div class = "membertype">
+            <label>Desired Membership Level*
+                <select name="memlevel" required>
+                <option value="">Please Select Level &#9662;</option>
+                <option value="nonprofit">Non-Profit</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                </select>
+            </label>
+            <ul class="leveldescriptions">
+                <li>Non-Profit: $0 cost</li>
+                <li>Bronze: $50, Free admission to mtgs, 20% off trainings</li>
+                <li>Silver: $200, Free admission to all meetings & trainings</li>
+                <li>Gold: $500, Free ad spot on home page, free admission to all meetings & trainings</li>
+            </ul>
+        </div>
+       
 
         <input type="hidden" name="date" value="CurrentTime"> 
         <input type="hidden" name="time" value="CurrentDate">
@@ -68,9 +79,6 @@
 
     </form>
 </main>
-
-
-
 
 <footer>
     <div class="mainfooter">
