@@ -361,7 +361,7 @@ footer ul {
 .thanksmain {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1;
+	grid-template-rows: 1fr;
 	background-color: #0490fb;
 	width: 100%;
 	align-items: center;
