@@ -56,9 +56,14 @@ const msToDays = 84600000;
 
 let today = Date.now();
 let lastvisitdate= Number(localStorage.getItem("lastvisit-ls"));
+/* check if lastvisit-ls exists right at the start. If it does, run your script like normal. 
+If it doesn't set it to the current date and display some kind of message for a first visit. */
 
-const elapseddays = Math.round((today - lastvisitdate) / msToDays);
-
-document.querySelector('.dayselapsed').textContent = elapseddays;
+if ("lastvisit-ls") {
+    const elapseddays = Math.round((today - lastvisitdate) / msToDays);
+    document.querySelector('.dayselapsed').textContent = elapseddays;
+} else {
+    document.querySelector('.dayselapsed').textContent = "Welcome, it's your first visit!";
+}
 
 localStorage.setItem("lastvisit-ls", today);
