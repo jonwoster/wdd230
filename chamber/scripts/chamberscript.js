@@ -59,7 +59,7 @@ let lastvisitdate= Number(localStorage.getItem("lastvisit-ls"));
 /* check if lastvisit-ls exists right at the start. If it does, run your script like normal. 
 If it doesn't set it to the current date and display some kind of message for a first visit. */
 
-if ("lastvisit-ls") {
+if (lastvisitdate) {
     const elapseddays = Math.round((today - lastvisitdate) / msToDays);
     document.querySelector('.dayselapsed').textContent = elapseddays;
 } else {
