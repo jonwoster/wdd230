@@ -67,3 +67,13 @@ if (lastvisitdate) {
 }
 
 localStorage.setItem("lastvisit-ls", today);
+
+//*************** Related to the form ************************************************
+
+
+
+const submittime = document.querySelector('#time');
+document.querySelector('#joinbutton').addEventListener('click', () => {
+    const currenttime = new Date();
+    submittime.textContent= currenttime;
+});
