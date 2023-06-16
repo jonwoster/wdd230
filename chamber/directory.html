@@ -6,8 +6,8 @@
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Discover Page for Leadville Chamber">
-    <title>Discover: Leadville Chamber of Commerce</title>
+    <meta name="description" content="Directory Page for Leadville Chamber">
+    <title>Directory: Leadville Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -30,54 +30,30 @@
         <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
     </div>
     <div id="header-date"></div>
+
     <nav>
         <ul id="primary-nav">
             <li><a href="./">Home</a></li>
             <li><a href="./discover.html">Discover</a></li>
-            <li class = "active"><a href="./join.html">Join</a></li>
-            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li class = "active"><a href="./directory.html">Directory</a></li>
         </ul>
     </nav>
+    
 </header>
 
-<main class="formmain">
-
-    <h1 class="formtitle">Join Us!</h1>
-    <form method="get" action="thankyou.html">
-        <label>First Name* <input type="text" name="fname" required></label>
-        <label>Last Name* <input type="text" name="lname" required></label>
-        <label>Email* <input type="email" name="email" placeholder="soandso@interweb.com" required></label>
-        <label>Name of Business* <input type="text" name="busname" required></label>
-        <label>Business Position <input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label> 
-        <label>Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-
-        <label class="top">Business Description <textarea name="textarea"></textarea></label>
-        
-        <div class = "membertype">
-            <label>Desired Membership Level*
-                <select name="memlevel" required>
-                <option value="">Please Select Level &#9662;</option>
-                <option value="nonprofit">Non-Profit</option>
-                <option value="bronze">Bronze</option>
-                <option value="silver">Silver</option>
-                <option value="gold">Gold</option>
-                </select>
-            </label>
-            <ul class="leveldescriptions">
-                <li>Non-Profit: $0 cost</li>
-                <li>Bronze: $50, Free admission to mtgs, 20% off trainings</li>
-                <li>Silver: $200, Free admission to all meetings & trainings</li>
-                <li>Gold: $500, Free ad spot on home page, free admission to all meetings & trainings</li>
-            </ul>
-        </div>
-
-        <input type="hidden" id = "time" name="time" value="CurrentTime"> 
-        <input type="submit" id = "joinbutton" value="Join the chamber" class="submitBtn">
-
-    </form>
+<main>
+    <div>
+        <h1 class = "directorytitle">Business Directory</h1>
+    </div>
+    <div class = "directorymain">
+        <div class="cards"></div>
+    </div>
+    
 </main>
 
 <footer>
+
     <div class="mainfooter">
         <img id = "footerlogo" src="images/leadville-chamber-logo-medium.webp" alt="Leadville Chamber logo">
         <div id="group1-mainfooter">
@@ -99,8 +75,8 @@
         </ul>
     </div>
     
-    
     <script src="scripts/chamberscript.js"></script>
+    <script src="scripts/directory.js"></script>
 
 </footer>
 </body>

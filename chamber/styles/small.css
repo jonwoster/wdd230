@@ -455,3 +455,50 @@ form input.submitBtn {
     max-width: 22rem;
 }
 
+/***************  Directory specific styling ************************/
+.directorytitle {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.directorymain {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	padding-bottom: 50px;
+}
+
+.directorymain h1 {
+	font-size: 2em;
+	color: #ffffff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: rgb(194, 210, 252);
+    border: 1px solid #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	box-shadow: 0 5px 5px #333;
+}
+
+.directorymain p {
+    margin: 0px 0px 10px 0px;
+}
+
+.cards.img {
+    /* width: auto; */
+    /* max-width: 325px; */
+    box-shadow: 0 0 10px #777;
+    border: 1px solid #333;
+	height: 75px;
+	max-width: 75%; 
+}

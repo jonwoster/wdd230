@@ -1,0 +1,79 @@
+
+{
+    "companies": [
+        {
+            "name": "Leadville Dry Cleaners",
+            "address": "101 Clean Street, Leadville, CO 11111",
+            "phone": "1234567891",
+            "website": "https://leadvilledry.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Painfest Climbing Gear",
+            "address": "125 High St, Leadville, CO 11111",
+            "phone": "9123456781",
+            "website": "https://painfestclimbing.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "silver"
+        },
+        {
+            "name": "Sandy's Cafe",
+            "address": "Tasty Ave, Leadville, CO 11111",
+            "phone": "8912345671",
+            "website": "https://sandyscafe.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "silver"
+        },
+        {
+            "name": "Extreme Threads",
+            "address": "214 High St, Leadville, CO 11111",
+            "phone": "7891234561",
+            "website": "https://extremethreads.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "24x7 Supermarket",
+            "address": "324 Tasty Ave, Leadville, CO 11111",
+            "phone": "6789123451",
+            "website": "https://247leadville.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "silver"
+        },
+        {
+            "name": "Sally's Dog Walking",
+            "address": "PO Box 123, Leadville, CO 11111",
+            "phone": "5678912341",
+            "website": "sallydogwalking@gmail.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Descartes Math Tutoring",
+            "address": "PO Box 5324, Leadville, CO 11111",
+            "phone": "4567891231",
+            "website": "mattdescartes@gmail.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Medieval Sharpening Services",
+            "address": "535 Main St, Leadville, CO 11111",
+            "phone": "3456789121",
+            "website": "https://leadvillesharp.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Lake Area Blood Bank",
+            "address": "555 Transylvania Ave, Leadville, CO 11111",
+            "phone": "2345678911",
+            "website": "https://lakebloodbank.com",
+            "image": "./images/directoryimages/dryclean.webp",
+            "membership": "non-profit"
+        }
+
+    ]
+}
+

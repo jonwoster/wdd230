@@ -97,7 +97,24 @@
 		min-width: 16rem;
 	}
 
+    /* ------------------- Directory specific styling ----------------------------*/
+	.directorytitle {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: auto;
+	}
 
+	.directorymain {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+		padding-bottom: 50px;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	  }
 }
 
 
