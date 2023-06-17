@@ -75,3 +75,10 @@ document.querySelector('.submitBtn').addEventListener('submit', () => {
     const currenttime = new Date();
     submittime.textContent= currenttime;
 });
+
+
+// The top three things I'm seeing: 1. I would move the function out of the event listener. 
+// Modular programming is great, and should help the event listener attach to the element without issues. 
+// 2. You need to add an ID to your time input. Your querySelector is looking for one, but it only has a name not an ID. ---Done
+// 3. You're going to want to set the value of the input, not the textContent. Anything but the value of the input gets 
+// left on the page. The value is what the form actually sends along. 

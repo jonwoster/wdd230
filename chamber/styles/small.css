@@ -466,21 +466,19 @@ form input.submitBtn {
 }
 
 section {
-    margin: 1rem;
-    padding: 0.35rem;
+    margin: 0 1rem 0 1rem; 
     background-color: white;
     border: 1px solid #0a0a0a;
     display: flex;
     flex-direction: column;
     align-items: center;
+	justify-content: center;
 	box-shadow: 0 5px 5px #333;
 }
 
 .cards.img {
     box-shadow: 0 0 10px #777;
     border: 1px solid #333;
-	height: 75px;
-	max-width: 75%; 
 }
 
 .menu {
@@ -502,13 +500,14 @@ section {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 10px;
-	align-items: center;
+	row-gap: 10px;
+	column-gap: 0;
 	padding-bottom: 40px;
 }
 
 .grid section {
 	text-align: center;
+	height: 300px;
 }
 
 .grid img {
@@ -517,6 +516,7 @@ section {
 
 .grid section > * {
 	margin: .1rem;
+	justify-content: center;
 }
 
 .grid .compname {

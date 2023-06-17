@@ -1,6 +1,6 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector(".cards");
 
 
 // When the user clicks on the grid button apply the grid class styling to the article ("display")

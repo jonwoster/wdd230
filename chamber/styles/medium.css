@@ -113,6 +113,19 @@
 		align-items:flex-start;
 	}
 
+	main#directory {  /* need 3 rows: 1 for title, 1 for buttons, 1 for card content */
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+	}
+
+	.list section {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr 1fr 1fr;
+		margin: 0 10px 0 10px;
+		padding: 1rem 0 1rem 0;
+
+	}
 	
 }
 
