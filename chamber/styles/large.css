@@ -85,7 +85,7 @@
 		margin: auto;
 	}
 
-	.directorymain {
+	/* .directorymain {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 		padding-bottom: 50px;
@@ -94,7 +94,7 @@
 	.cards {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-	}
+	} */
 
 
 }

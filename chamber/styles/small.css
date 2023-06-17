@@ -461,23 +461,21 @@ form input.submitBtn {
     align-items: center;
     flex-direction: column;
     margin: auto;
-}
-
-.directorymain {
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-	padding-bottom: 50px;
-}
-
-.directorymain h1 {
 	font-size: 2em;
 	color: #ffffff;
 }
 
-.cards {
+/* .directorymain {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	padding-bottom: 50px;
+} */
+
+
+/* .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  }
+  } */
 
 section {
     margin: 0.25rem;
@@ -488,10 +486,6 @@ section {
     flex-direction: column;
     align-items: center;
 	box-shadow: 0 5px 5px #333;
-}
-
-.directorymain p {
-    margin: 0px 0px 10px 0px;
 }
 
 .cards.img {
@@ -521,6 +515,7 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
+	padding-bottom: 50px;
 }
 
 .grid section {
@@ -543,13 +538,17 @@ section {
 .list {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 50px;
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+	/* display: grid;
+	grid-template-columns: 2fr 1fr 1fr; */
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px 0 10px;
+	padding: 1rem;
+	align-items:flex-start;
 }
 
 .list section > * {
@@ -562,30 +561,22 @@ section {
 
 .list section h3 {
 	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: rgb(241, 241, 241);
 }
 
-section h3 {
+/* section h3 {
 	font-size: 1.5rem;
-}
+} */
 
-section p {
+/* section p {
 	font-weight: 600;
 	font-size: smaller;
-}
+} */
 
-section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
-img {
+/* img {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
+	max-width: 100%; 
+} */
