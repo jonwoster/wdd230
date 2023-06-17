@@ -468,7 +468,7 @@ form input.submitBtn {
 section {
     margin: 1rem;
     padding: 0.35rem;
-    background-color: rgb(194, 210, 252);
+    background-color: white;
     border: 1px solid #0a0a0a;
     display: flex;
     flex-direction: column;
@@ -497,6 +497,7 @@ section {
 	background-color:#002868;
 	color: white;
 }
+
 
 .grid {
 	display: grid;
@@ -542,10 +543,6 @@ section {
 
 .list section img {
 	display: none; 
-}
-
-.list section h3 {
-	font-size: 1rem;
 }
 
 .list section:nth-child(even) {
