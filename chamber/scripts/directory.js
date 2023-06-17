@@ -47,6 +47,9 @@ const displaycards = (companies) => {
 
       // Set attributes for links so they work as links but don't go anywhere because they are fictional
       buswebsite.setAttribute('href', '#');
+
+      // Set attribute for company name
+      busname.setAttribute('class', 'compname');
   
       // Set attributes for logo images
       logoimage.setAttribute('src', company.image);

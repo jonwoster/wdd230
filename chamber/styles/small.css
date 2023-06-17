@@ -465,20 +465,8 @@ form input.submitBtn {
 	color: #ffffff;
 }
 
-/* .directorymain {
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-	padding-bottom: 50px;
-} */
-
-
-/* .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  } */
-
 section {
-    margin: 0.25rem;
+    margin: 1rem;
     padding: 0.35rem;
     background-color: rgb(194, 210, 252);
     border: 1px solid #0a0a0a;
@@ -489,8 +477,6 @@ section {
 }
 
 .cards.img {
-    /* width: auto; */
-    /* max-width: 325px; */
     box-shadow: 0 0 10px #777;
     border: 1px solid #333;
 	height: 75px;
@@ -499,23 +485,25 @@ section {
 
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid #002868;
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color: white;
 	text-align: center;
 }
 
 .menu button {
 	padding: 1rem;
 	font-weight: 700;
+	background-color:#002868;
+	color: white;
 }
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 10px;
 	align-items: center;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .grid section {
@@ -523,16 +511,15 @@ section {
 }
 
 .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+	border: 1px solid #002868;
 }
 
 .grid section > * {
-	margin: 0.1rem;
+	margin: .1rem;
 }
 
-.grid h3 {
-	font-family: "Caveat", cursive;
+.grid .compname {
+	font-size: 1.5rem;
 }
 
 .list {
@@ -542,8 +529,6 @@ section {
 }
 
 .list section {
-	/* display: grid;
-	grid-template-columns: 2fr 1fr 1fr; */
 	display: flex;
 	flex-direction: column;
 	margin: 0 10px 0 10px;
@@ -556,7 +541,7 @@ section {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none; 
 }
 
 .list section h3 {
@@ -571,16 +556,3 @@ section {
 	text-decoration: underline;
 }
 
-/* section h3 {
-	font-size: 1.5rem;
-} */
-
-/* section p {
-	font-weight: 600;
-	font-size: smaller;
-} */
-
-/* img {
-	height: 75px;
-	max-width: 100%; 
-} */

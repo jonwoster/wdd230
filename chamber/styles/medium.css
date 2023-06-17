@@ -105,20 +105,8 @@
 		margin: auto;
 	}
 
-	/* .directorymain {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-		padding-bottom: 50px;
-	} */
-
-	/* .cards {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-	  } */
 
 	.list section {
-		/* display: grid;
-		grid-template-columns: 2fr 1fr 1fr; */
 		display: flex;
 		flex-direction: row;
 		margin: 0 10px 0 10px;
@@ -126,7 +114,7 @@
 		align-items:flex-start;
 	}
 
-	  
+	
 }
 
 
