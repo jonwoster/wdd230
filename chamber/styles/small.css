@@ -567,6 +567,10 @@ section {
 	background-color: rgb(241, 241, 241);
 }
 
+.list a, .grid a {
+	text-decoration: underline;
+}
+
 /* section h3 {
 	font-size: 1.5rem;
 } */

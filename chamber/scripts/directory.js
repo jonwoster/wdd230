@@ -38,12 +38,15 @@ const displaycards = (companies) => {
       let busname = document.createElement('p');
       let busaddress = document.createElement('p');
       let busphone = document.createElement('p');
-      let buswebsite = document.createElement('p');
+      let buswebsite = document.createElement('a');
   
       busname.textContent = `${company.name}`;
       busaddress.textContent = `${company.address}`;
       busphone.textContent = `${company.phone}`;
       buswebsite.textContent = `${company.website}`;
+
+      // Set attributes for links so they work as links but don't go anywhere because they are fictional
+      buswebsite.setAttribute('href', '#');
   
       // Set attributes for logo images
       logoimage.setAttribute('src', company.image);
