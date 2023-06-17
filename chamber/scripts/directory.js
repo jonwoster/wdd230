@@ -1,22 +1,23 @@
-// const gridbutton = document.querySelector("#grid");
-// const listbutton = document.querySelector("#list");
-// const display = document.querySelector("article");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
-// gridbutton.addEventListener("click", () => {
-// 	// example using arrow function
-// 	display.classList.add("grid");
-// 	display.classList.remove("list");
-// });
 
-// listbutton.addEventListener("click", showList); // example using defined function
+// When the user clicks on the grid button apply the grid class styling to the article ("display")
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
 
-// function showList() {
-// 	display.classList.add("list");
-// 	display.classList.remove("grid");
-// }
+// When the user clicks on the list button apply the list class styling to the article ("display")
+listbutton.addEventListener("click", showList); 
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
 
-// **************************************************************************
 
+// Logic and function for when we want to load the data from API
 const url = './json/data.json';
 
 async function getcards() {
@@ -39,13 +40,12 @@ const displaycards = (companies) => {
       let busphone = document.createElement('p');
       let buswebsite = document.createElement('p');
   
-      //h2.textContent = `${prophet.name} ${prophet.lastname}`;
       busname.textContent = `${company.name}`;
       busaddress.textContent = `${company.address}`;
       busphone.textContent = `${company.phone}`;
       buswebsite.textContent = `${company.website}`;
   
-      // Build the image portrait by setting all the relevant attribute
+      // Set attributes for logo images
       logoimage.setAttribute('src', company.image);
       logoimage.setAttribute('alt', `Logo for ${company.name}`);
       logoimage.setAttribute('loading', 'lazy');
@@ -53,7 +53,6 @@ const displaycards = (companies) => {
       //logoimage.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
-      //card.appendChild(h2);
       card.appendChild(logoimage);
       card.appendChild(busname);
       card.appendChild(busaddress);
@@ -65,4 +64,4 @@ const displaycards = (companies) => {
     }); // end of forEach loop
   } // end of function expression
 
-getcards();
+getcards();  //load the data from the API
