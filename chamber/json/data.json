@@ -14,7 +14,7 @@
             "address": "125 High St, Leadville, CO 11111",
             "phone": "9123456781",
             "website": "https://painfestclimbing.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/climbing.webp",
             "membership": "silver"
         },
         {
@@ -22,7 +22,7 @@
             "address": "Tasty Ave, Leadville, CO 11111",
             "phone": "8912345671",
             "website": "https://sandyscafe.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/burger.webp",
             "membership": "silver"
         },
         {
@@ -30,7 +30,7 @@
             "address": "214 High St, Leadville, CO 11111",
             "phone": "7891234561",
             "website": "https://extremethreads.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/shirt.webp",
             "membership": "gold"
         },
         {
@@ -38,7 +38,7 @@
             "address": "324 Tasty Ave, Leadville, CO 11111",
             "phone": "6789123451",
             "website": "https://247leadville.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/market.webp",
             "membership": "silver"
         },
         {
@@ -46,7 +46,7 @@
             "address": "PO Box 123, Leadville, CO 11111",
             "phone": "5678912341",
             "website": "sallydogwalking@gmail.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/dog.webp",
             "membership": "bronze"
         },
         {
@@ -54,7 +54,7 @@
             "address": "PO Box 5324, Leadville, CO 11111",
             "phone": "4567891231",
             "website": "mattdescartes@gmail.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/math.webp",
             "membership": "bronze"
         },
         {
@@ -62,7 +62,7 @@
             "address": "535 Main St, Leadville, CO 11111",
             "phone": "3456789121",
             "website": "https://leadvillesharp.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/knives.webp",
             "membership": "gold"
         },
         {
@@ -70,7 +70,7 @@
             "address": "555 Transylvania Ave, Leadville, CO 11111",
             "phone": "2345678911",
             "website": "https://lakebloodbank.com/",
-            "image": "./images/directoryimages/dryclean.webp",
+            "image": "./images/directoryimages/bloodbank.webp",
             "membership": "non-profit"
         }
 

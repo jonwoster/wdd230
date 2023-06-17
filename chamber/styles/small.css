@@ -484,7 +484,8 @@ section {
 }
 
 .menu {
-	margin: 1rem auto;
+	margin: .5rem auto;
+	margin-bottom: 0px;
 	border: 1px solid #002868;
 	padding: 0.5rem;
 	background-color: white;
@@ -497,7 +498,6 @@ section {
 	background-color:#002868;
 	color: white;
 }
-
 
 .grid {
 	display: grid;
