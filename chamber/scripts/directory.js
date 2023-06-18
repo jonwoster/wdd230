@@ -2,6 +2,8 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector(".cards");
 
+// Default is to show that the grid button is active
+gridbutton.classList.add("gridactive");
 
 // When the user clicks on the grid button apply the grid class styling to the article ("display")
 gridbutton.addEventListener("click", () => {
@@ -29,7 +31,6 @@ const url = './json/data.json';
 async function getcards() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.companies);  // for debugging
     displaycards(data.companies);
 }
   
@@ -39,7 +40,6 @@ const displaycards = (companies) => {
     companies.forEach((company) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
-      //let h2 = document.createElement('h2');
       let logoimage = document.createElement('img');
       let busname = document.createElement('p');
       let busaddress = document.createElement('p');
@@ -61,8 +61,6 @@ const displaycards = (companies) => {
       logoimage.setAttribute('src', company.image);
       logoimage.setAttribute('alt', `Logo for ${company.name}`);
       logoimage.setAttribute('loading', 'lazy');
-      //logoimage.setAttribute('width', '340');
-      //logoimage.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
       card.appendChild(logoimage);
