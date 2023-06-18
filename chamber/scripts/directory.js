@@ -7,6 +7,9 @@ const display = document.querySelector(".cards");
 gridbutton.addEventListener("click", () => {
 	display.classList.add("grid");
 	display.classList.remove("list");
+  //Change appearance of the grid vs list buttons to show which is active
+  gridbutton.classList.add("gridactive");
+  listbutton.classList.remove("listactive");
 });
 
 // When the user clicks on the list button apply the list class styling to the article ("display")
@@ -14,6 +17,9 @@ listbutton.addEventListener("click", showList);
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
+  //Change appearance of the grid vs list buttons to show which is active
+  gridbutton.classList.remove("gridactive");
+  listbutton.classList.add("listactive");
 }
 
 

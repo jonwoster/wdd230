@@ -497,6 +497,15 @@ section {
 	color: white;
 }
 
+.gridactive {
+	border: 5px solid #03943d;
+}
+
+.listactive {
+	border: 5px solid #03943d;
+}
+
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
