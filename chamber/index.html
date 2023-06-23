@@ -105,10 +105,16 @@
     </div>
 
     <div class="mainsections" id="weather">
+       
         <h2>Weather</h2>
-        <p>Current Temp (F): <span id="tempvalue">43.6</span></p>
-        <p>Current Windspeed (mph): <span id="speedvalue">5.2</span></p>
-        <p>Windchill (F): <span id="chillvalue"></span></p>
+        <figure>
+            <img src="" alt="" id="weather-icon" />
+            <figcaption></figcaption>
+        </figure>
+
+        <p>Current Temp: <span id="current-temp"></span> &deg;F</p>
+        <p>Current Windspeed: <span id="windspeed"></span> mph</p>
+        <p>Windchill: <span id="windchill"></span> <span id = "windchillunits">&deg;F</span></p>
     </div>
 	
 </main>
@@ -134,11 +140,12 @@
             <li>WDD 230</li>
             <li>Last Modification: <span id="last-updated"></span></li>
             <li>Days since last visit: <span class="dayselapsed"></span></li>
+            <li>Weather obtained via API from OpenWeatherMap</li>
         </ul>
     </div>
     
     <script src="scripts/chamberscript.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </footer>
 </body>

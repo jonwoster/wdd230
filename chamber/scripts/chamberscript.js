@@ -70,11 +70,11 @@ localStorage.setItem("lastvisit-ls", today);
 
 //*************** Related to the form ************************************************
 
-const submittime = document.querySelector('#time');
-document.querySelector('.submitBtn').addEventListener('submit', () => {
-    const currenttime = new Date();
-    submittime.textContent= currenttime;
-});
+// const submittime = document.querySelector('#time');
+// document.querySelector('.submitBtn').addEventListener('submit', () => {
+//     const currenttime = new Date();
+//     submittime.textContent= currenttime;
+// });
 
 
 // The top three things I'm seeing: 1. I would move the function out of the event listener. 
