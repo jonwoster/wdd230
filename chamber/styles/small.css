@@ -251,6 +251,11 @@ picture.myherophoto img {
 	grid-column: 1;
 }
 
+#weather-icon {
+	min-width: 6rem;
+	margin: -20px;
+}
+
 #maplink {
 	color: white;
 }
