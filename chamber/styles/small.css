@@ -56,6 +56,7 @@ h1 {
 	width: 30px;
 	text-align: center;
 	text-decoration: none;
+	text-rendering: auto;
   }
   
   .fa:hover {
@@ -577,3 +578,41 @@ section {
 	text-decoration: underline;
 }
 
+/*************** Contact page specific styling *********************/
+.contact {
+	display: grid;
+	grid-template-columns: 3fr;
+	row-gap: 1rem;
+	column-gap: 1rem;
+}
+
+.contactsections {
+	background-color: #002868;
+	color: white;
+	border: solid #03943d 1px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	padding: 1rem;
+}
+
+#contacttitle {
+	grid-row: 1/2;
+    margin: auto;
+	text-align: center;
+	font-size: 2em;
+	color: #ffffff;
+}
+
+#address-and-poc {
+	grid-row: 2/3;
+}
+        
+#hours {
+	grid-row: 3/4;
+}
+      
+#contact-photo {
+	display: grid;
+	grid-row: 4/5;
+	justify-content: center;
+}

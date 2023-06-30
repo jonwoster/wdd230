@@ -6,8 +6,8 @@
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Directory Page for Leadville Chamber">
-    <title>Directory: Leadville Chamber of Commerce</title>
+    <meta name="description" content="Contact Page for Leadville Chamber">
+    <title>Contact: Leadville Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -36,24 +36,46 @@
             <li><a href="./">Home</a></li>
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="./join.html">Join</a></li>
-            <li class = "active"><a href="./directory.html">Directory</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li class = "active"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
     
 </header>
 
-<main id = "directory">
-    
-    <div>
-        <h1 class = "directorytitle">Business Directory</h1>
-    </div>
-    <div class="menu">
-		<button id="grid">᎒᎒᎒</button>
-		<button id="list">☰</button>
-	</div>
+<main class = "contact">
+    <!-- Suggested content includes contact information for the chamber, office hours, points of contact 
+        and/or board of director information, a small form for general inquiries -->
 
-    <div class="cards grid"></div>
+    <div>
+        <h1 id = "contacttitle">Contact Information</h1>
+    </div>
+
+    <div id = "address-and-poc" class = "contactsections">
+        <h3>Address</h3>
+        <p>809 Harrison Ave
+            <br>(P.O. Box 861)
+            <br>Leadville, CO 80461</p>
+        <p>555-555-1212 (Landline)</p>
+        <br>
+        <h3>Chamber President</h3>
+        <p>Sally Forth
+            <br>sallyforth@leadvillechamber.com</p>
+    </div>
+
+    <div id = "hours" class = "contactsections">
+        <h3>Hours</h3>
+        <p>Monday - Friday<br>9:00 AM - 5:30 PM</p>
+        <p>Saturday<br>9:00 AM - 1:00 PM</p>
+    </div>
+
+    <div id = "contact-photo" class = "contactsections">
+            <picture>
+                <source srcset="images/chamber-hq-med-large.webp" media="(min-width: 32.5em)">
+                <img src="images/chamber-hq-small.webp" alt="Leadville Chamber Headquarters">
+            </picture>
+            <p class="caption">Our Leaville Chamber Headquarters</p>
+    </div>
     
 </main>
 
@@ -81,7 +103,6 @@
     </div>
     
     <script src="scripts/chamberscript.js"></script>
-    <script src="scripts/directory.js"></script>
 
 </footer>
 </body>
