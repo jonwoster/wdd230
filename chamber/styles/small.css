@@ -221,6 +221,7 @@ picture.myherophoto img {
 .spotsection {
 	grid-row: 3;
 	grid-column: 1;
+	padding: 0px;
 	
 }
 
