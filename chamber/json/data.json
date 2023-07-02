@@ -7,7 +7,7 @@
             "phone": "1234567891",
             "website": "https://leadvilledry.com/",
             "image": "./images/directoryimages/dryclean.webp",
-            "membership": "bronze"
+            "membership": "gold"
         },
         {
             "name": "Painfest Climbing Gear",
@@ -16,6 +16,14 @@
             "website": "https://painfestclimbing.com/",
             "image": "./images/directoryimages/climbing.webp",
             "membership": "silver"
+        },
+        {
+            "name": "Descartes Math Tutoring",
+            "address": "PO Box 5324, Leadville, CO 11111",
+            "phone": "4567891231",
+            "website": "mattdescartes@gmail.com/",
+            "image": "./images/directoryimages/math.webp",
+            "membership": "bronze"
         },
         {
             "name": "Sandy's Cafe",
@@ -47,14 +55,6 @@
             "phone": "5678912341",
             "website": "sallydogwalking@gmail.com/",
             "image": "./images/directoryimages/dog.webp",
-            "membership": "bronze"
-        },
-        {
-            "name": "Descartes Math Tutoring",
-            "address": "PO Box 5324, Leadville, CO 11111",
-            "phone": "4567891231",
-            "website": "mattdescartes@gmail.com/",
-            "image": "./images/directoryimages/math.webp",
             "membership": "bronze"
         },
         {

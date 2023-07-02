@@ -45,10 +45,13 @@
 	.spotsection {
 		grid-row: 1/4;
 		grid-column: 4/5;
+	}
+	.indexspots {
 		display: flex;
 		flex-direction: column;
 	}
-	#spot1, #spot2, #spot3 {
+
+	#spotnumber1, #spotnumber2, #spotnumber3 {
 		display: block;
 	}
 

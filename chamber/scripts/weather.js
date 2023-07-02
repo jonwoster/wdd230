@@ -15,7 +15,7 @@ async function apiFetch() {
       const response = await fetch(weatherurl);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // this is for testing the call
+        //console.log(data); // this is for testing the call
         displayResults(data);
         calcwindspeed();
       } else {

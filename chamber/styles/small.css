@@ -223,14 +223,19 @@ picture.myherophoto img {
 	grid-column: 1;
 	
 }
+
+.spots section {
+	margin: 10px;
+}
+
 .spots {
 	border: 1px solid white;
-	text-shadow: #03943d 5px 0px 10px;
+	color: #002868;
 	margin: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
-#spot3 {
+#spotnumber3 {
 	display: none;
 }
 

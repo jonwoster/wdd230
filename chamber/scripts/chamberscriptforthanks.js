@@ -68,5 +68,4 @@ if (lastvisitdate) {
 
 localStorage.setItem("lastvisit-ls", today);
 
-//*************** Related to the form ************************************************
-// Removed this to avoid an error
+

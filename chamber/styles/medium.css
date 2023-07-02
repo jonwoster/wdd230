@@ -14,10 +14,13 @@
 	.spotsection {
 		grid-row: 3;
 		grid-column: 1/6;
+	}
+
+	.indexspots {
 		display: flex;
 		flex-direction: row;
 	}
-	
+
 	#join {
 		grid-row: 4;
 		grid-column: 1/6;
