@@ -226,6 +226,8 @@ picture.myherophoto img {
 
 .spots section {
 	margin: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .spots {
