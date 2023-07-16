@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="About Us Page for Bountiful Foods">
+    <title>Bountiful Foods About Us</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon-bountiful.ico">
+</head>
+
+<body>
+
+<header>
+    
+    <img id="header-logo" src="images/bountiful-logo-small.jpg" alt="Bountiful Foods Logo Image">
+    
+    <div id=buttonholder>
+        <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
+    </div>  
+
+    <nav>
+        <ul id="primary-nav">
+            <li><a href="./">Home</a></li>
+            <li><a href="./fresh.html">Order Fresh!</a></li>
+            <li class = "active"><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+
+
+<main>
+    <p>about info goes here.</p>
+
+	
+</main>
+
+
+
+<footer>
+    <!-- Social media links                             -->
+    <div class="medialinks">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" title ="Facebook Link"></a>
+        <a href="https://instagram.com/" class="fa fa-instagram" title = "Instagram Link"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter" title = "Twitter Link"></a>
+    </div>
+
+    <!-- Last updated                                   -->
+    <div class="footeritems updateblock">Last Modified:&nbsp<span id="last-updated"></span></div>
+
+
+    <!-- Footer image                                 -->
+    <picture id="strawberries">
+        <source srcset="images/strawberry-footer-medium.webp" media="(min-width: 32.5em) and (max-width: 63.9em)">
+        <source srcset="images/strawberry-footer-large.webp" media="(min-width: 64em)">
+        <img src="images/strawberry-footer-small.webp" alt="Image of strawberries" loading="lazy">
+    </picture>
+
+    <!-- Resource page                                  -->
+    <div class="footeritems resources"><br><br><a href="./resources.html">Resources & Credits</a></div>
+
+    <!-- Javascript links                                -->
+    <script src="scripts/genericscript.js"></script>
+    <script src="scripts/weather.js"></script>
+
+</footer>
+
+</body>

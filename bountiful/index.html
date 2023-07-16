@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Homepage for Bountiful Foods">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon-bountiful.ico">
+</head>
+
+<body>
+
+<header>
+    
+    <img id="header-logo" src="images/bountiful-logo-small.jpg" alt="Bountiful Foods Logo Image">
+    
+    <div id=buttonholder>
+        <button id="hamburger-button"><span>&#9776;</span><span>X</span></button>
+    </div>  
+
+    <nav>
+        <ul id="primary-nav">
+            <li class = "active"><a href="./">Home</a></li>
+            <li><a href="./fresh.html">Order Fresh!</a></li>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+
+
+<main>
+    <picture class="mainfruitimg">
+        <!-- <source srcset="images/strawberry-footer-medium.webp" media="(min-width: 32.5em) and (max-width: 63.9em)">
+        <source srcset="images/strawberry-footer-large.webp" media="(min-width: 64em)"> -->
+        <img src="images/main-tropical-fruit.webp" alt="Image of tropical fruit" loading="lazy">
+    </picture>
+    
+    
+    <div class="calltoaction mainboxes">
+        <p>Order your drink and get it delivered to you, with exactly what you want. Fresh, your way at your place.</p>
+        <form style="display: inline" action="./fresh.html" method="get">
+            <button>Order Fresh!</button>
+        </form>
+    </div>
+
+	<div class="serviceareas mainboxes">
+        <p>Service areas goes here</p>
+    </div>
+
+    <div class="drinkinfo mainboxes">
+        <p>drinkinfo goes here</p>
+    </div>
+
+    <div class="contactinfo mainboxes">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Bountiful Foods Headquarters: 1200 Carlsbad Village Dr, Carlsbad, CA 92008</li>
+            <li>Business hours: Mon-Sat 7:00 AM-9:00 PM, Closed Sundays</li>
+            <li>Landline Phone: 555-GO-FRUIT</li>
+            <li>Text us at: 555-GO-FRESH</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.8923084007674!2d-117.34312708480799!3d33.16445398085669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72184e0195a9%3A0xb4aec05e2e31c661!2sCarlsbad%20City%20Hall!5e0!3m2!1sen!2sus!4v1689454680466!5m2!1sen!2sus" width="325" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="weather mainboxes">
+        <h2>Weather</h2>
+        <figure>
+            <img src="#" alt="from-js" id="weather-icon">
+            <figcaption></figcaption>
+        </figure>
+
+        <p class="currenttemp">Current Temp: <span id="current-temp"></span> &deg;F&nbsp;&nbsp;Humidity: <span id="humidity"></span> %</p>
+
+        <div class="forecast">
+            <p>Forecast:</p>
+
+        </div>
+
+    </div>
+	
+</main>
+
+
+
+<footer>
+    <!-- Social media links                             -->
+    <div class="medialinks">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" title ="Facebook Link"></a>
+        <a href="https://instagram.com/" class="fa fa-instagram" title = "Instagram Link"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter" title = "Twitter Link"></a>
+    </div>
+
+    <!-- Last updated                                   -->
+    <div class="footeritems updateblock">Last Modified:&nbsp<span id="last-updated"></span></div>
+
+
+    <!-- Footer image                                 -->
+    <picture id="strawberries">
+        <source srcset="images/strawberry-footer-medium.webp" media="(min-width: 32.5em) and (max-width: 63.9em)">
+        <source srcset="images/strawberry-footer-large.webp" media="(min-width: 64em)">
+        <img src="images/strawberry-footer-small.webp" alt="Image of strawberries" loading="lazy">
+    </picture>
+
+    <!-- Resource page                                  -->
+    <div class="footeritems resources"><br><br><a href="./resources.html">Resources & Credits</a></div>
+
+    <!-- Javascript links                                -->
+    <script src="scripts/genericscript.js"></script>
+    <script src="scripts/weather.js"></script>
+
+</footer>
+
+</body>

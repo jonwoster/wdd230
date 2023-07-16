@@ -1,0 +1,63 @@
+@media only screen and (min-width: 32.5em) {
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+}
+
+.calltoaction {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.serviceareas {
+    grid-row: 1/4;
+    grid-column: 2;
+}
+
+.drinkinfo {
+    grid-row: 2/5;
+    grid-column: 1;
+}
+
+.contactinfo {
+    grid-row: 5/6;
+    grid-column: 1;
+}
+
+.weather {
+    grid-row: 4/6;
+    grid-column: 2;
+}
+
+
+
+.medialinks {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+a.fa {
+	padding-left: 2rem;
+    font-size: 2rem;
+    
+}
+
+#strawberries {
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 1rem;
+}
+
+.footeritems {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
+
+}
