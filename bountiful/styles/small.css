@@ -242,6 +242,61 @@ color: black;
     flex-direction: row;
 }
 
+/*******************    Order Fresh Styling  ***********************/
+.mainfresh {
+    display: grid;
+	grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    margin-left: 1rem;
+}
 
+.freshexplanation {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.freshform {
+    grid-row: 2;
+    grid-column: 1;
+	width: 100%;
+    border: solid 2px #8EE53F;
+    padding-left: 5px;
+}
+
+.mainfresh form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainfresh form div {
+    padding-top: 1rem;
+}
+
+.mainfresh form label {
+    padding-top: 1rem;
+}
+
+form input.submitBtn {
+    border: solid 2px black;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+    max-width: 22rem;
+}
+
+form input.submitBtn:hover {
+    background-color: #ffea00;
+    font-size: 1.1rem;
+}
+
+.drinkinfo {
+    grid-row: 3;
+    grid-column: 1;
+    padding-left: 5px;
+    border: solid 2px #8EE53F;
+}
 
 
