@@ -56,13 +56,14 @@
 	}
 	
 	.serviceareas {
-		grid-row: 3/6;
-		grid-column: 2;
-	}
-	
-	.drinkinfo {
 		grid-row: 2/6;
 		grid-column: 1;
+	}
+	
+	.maindrinkinfo {
+		
+		grid-row: 3/6;
+		grid-column: 2;
 	}
 	
 	.contactinfo {
@@ -75,11 +76,12 @@
 		grid-column: 3;
 	}
 
+	/************   Fresh order stylying *****************************/
+
 	.mainfresh {
 		grid-template-columns: repeat(2, auto);
 		grid-template-rows: repeat(2, auto);
 	}
-
 	.drinkinfo {
 		grid-row: 2;
 		grid-column: 2;
@@ -87,14 +89,7 @@
 
 
 
-
-
-
-
-
-
-
-
+	/************    Footer Styling ****************************/
 	footer {
 		grid-template-rows: repeat(2, auto);
 		grid-template-columns: repeat(3, auto);

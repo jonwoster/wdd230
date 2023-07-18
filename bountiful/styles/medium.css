@@ -17,7 +17,7 @@ main {
     grid-column: 2;
 }
 
-.drinkinfo {
+.maindrinkinfo {
     grid-row: 2/5;
     grid-column: 1;
 }

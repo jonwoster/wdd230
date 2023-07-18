@@ -1,6 +1,6 @@
 // Create three variables that hold references to the input, button, and list elements using const.
 const unolistvar = document.querySelector('ul');
-const inputvar = document.querySelector('input');
+const inputvar = document.querySelector('#favchap');
 const buttonvar = document.querySelector('button');
 
 
@@ -13,6 +13,7 @@ buttonvar.addEventListener('click', () => {
 
         //start off by storing the current value of the input element in a variable.
         const currvalue = inputvar.value;
+        console.log("inputvar.value = ",inputvar.value);
 
         // create an li element
         const livar = document.createElement('li'); 

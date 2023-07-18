@@ -21,7 +21,6 @@
 <body>
 
 <header>
-    
     <img id="header-logo" src="images/bountiful-logo-small.jpg" alt="Bountiful Foods Logo Image">
     
     <div id=buttonholder>
@@ -35,71 +34,64 @@
             <li><a href="./about.html">About Us</a></li>
         </ul>
     </nav>
-    
 </header>
 
 
-
 <main class="mainfresh">
-    
 <!-- 
-Populate all three select elements with all of the available fruits.
-Available fruit options must only come from this JSON data source for full credit consideration: Fruit DataLinks to an external site.
-and,
-
 Do NOT send the form to a new page upon form submission. Instead, use a JavaScript event handler to produce a formatted output area on this same page showing:
 the input values of the order (7 inputs = first name, email, phone, three selected fruits, and special instructions),
 the order date, and
 the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit choices selected on the form. The data source provides that information per fruit. -->
+    
     <div class="freshexplanation">
         <h1>Order Fresh!</h1>
-        <p>Please use the form below to choose up to three fruits for your fresh drink. </p>
+        <p>Please use the form below to choose three fruits for your fresh drink. </p>
     </div>
 
     <div class="freshform">
-        <form method="get" action="thankyou.html">
-            <label>First Name* <input type="text" name="fname" required></label>
-            <label>Email* <input type="email" name="email" placeholder="clevershopper@interweb.com" required></label> 
-            <label>Phone* <input type="tel" name="phone" placeholder="7605551234" required></label>
-
-            <label class="instructions">Special Instructions <textarea name="textarea"></textarea></label>
+        <form id="formid" method="get" onsubmit="return false">
+            <label>First Name* <input type="text" name="fname" id="fname" required></label>
+            <label>Email* <input type="email" name="email" id="email" placeholder="clevershopper@interweb.com" required></label> 
+            <label>Phone* <input type="tel" name="phone" id="phone" placeholder="7605551234" required></label>
             
-            <div class = "fruitchoices fruit1">
-                <label>First Fruit Choice*
-                    <select name="fruit1" required>
+            <div class = "fruitchoices">
+                <label for="fruit1">First Fruit Choice*</label>
+                    <select name="fruit1" id="fruit1" required>
                         <option value="">Please Select Fruit &#9662;</option>
-                        <option value="nonprofit">Non-Profit</option>
                     </select>
-                </label>
             </div>
 
-            <div class = "fruitchoices fruit2">
-                <label>Second Fruit Choice
-                    <select name="fruit2">
+            <div class = "fruitchoices">
+                <label for="fruit2">Second Fruit Choice*</label>
+                    <select name="fruit2" id="fruit2" required>
                         <option value="">Please Select Fruit &#9662;</option>
-                        <option value="nonprofit">Non-Profit</option>
                     </select>
-                </label>
             </div>
 
-            <div class = "fruitchoices fruit3">
-                <label>Third Fruit Choice
-                    <select name="fruit3">
+            <div class = "fruitchoices">
+                <label for= "fruit3">Third Fruit Choice*</label>
+                    <select name="fruit3" id="fruit3" required>
                         <option value="">Please Select Fruit &#9662;</option>
-                        <option value="nonprofit">Non-Profit</option>
-                    </select>
-                </label>        
+                    </select>     
             </div>
 
-            <input type="hidden" id = "time" name="time" value="CurrentTime"> 
-            <input type="submit" id = "freshbutton" value="Order Drink" class="submitBtn">
+            <div>
+                <label for="instructions">Special Instructions</label>
+                <input type="textarea" name="instructions" id="instructions">
+            </div>
+            
+            <button type="submit" id = "freshbutton" value="Order Drink" class="submitBtn">Order Drink</button>
 
         </form>
     </div> <!-- end of form section div -->
 
     <div class="drinkinfo">
-        <h2>Fresh! Nutritional Info</h2>
-        <p>Lots of drink info goes here</p>
+        <h2>Order Info</h2>
+        <div class = "drinkinstance">
+            <ul class="nutritionalul">
+            </ul>
+        </div>
     </div>  <!--  End of drink info div-->
 	
 </main>
