@@ -58,11 +58,6 @@ a.fa {
     grid-column: 2;
 }
 
-.about-main {
-    grid-template-columns: 1;
-    grid-template-rows: 3;
-}
-
 .about-history {
     grid-row: 1;
     grid-column: 1;
