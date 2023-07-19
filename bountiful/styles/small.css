@@ -111,11 +111,11 @@ main {
 }
 
 .serviceareas {
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .drinkinfo {
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .weather h2, .contactinfo h2 {
@@ -131,7 +131,7 @@ main li {
     grid-row: 4;
 }
 
-.serviceareas, .calltoaction {
+.serviceareas, .calltoaction, .maindrinkdiv {
     text-align: center;
 }
 
@@ -248,22 +248,24 @@ color: black;
 /*******************    Order Fresh Styling  ***********************/
 .mainfresh {
     display: grid;
-	grid-template-columns: repeat(1, auto);
+	grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     margin-left: 1rem;
+    width: auto;
+    margin-right: 1rem;
 }
 
 .freshexplanation {
     grid-row: 1;
     grid-column: 1;
+    padding-right: 1rem;
 }
 
 .freshform {
     grid-row: 2;
     grid-column: 1;
-	width: 100%;
     border: solid 2px #8EE53F;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .mainfresh form {
@@ -304,10 +306,10 @@ button:hover {
 .drinkinfo {
     grid-row: 3;
     grid-column: 1;
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: solid 2px #8EE53F;
     color: black;
-    width: 100%;
 }
 
 input, select#fruit1, select#fruit2, select#fruit3 {
@@ -315,12 +317,49 @@ input, select#fruit1, select#fruit2, select#fruit3 {
     width: 300px;
 }
 
-#instructions {
-    width: 350px;
-}
-
 span {
     color: black;
 }
 
+/***********    About Styling  ********************/
+.about-main {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    margin: 1rem 1rem 0 1rem;
+    width: auto;
+}
+
+.about-history, .about-now, .about-contact {
+    padding: 0 1rem 0 1rem;
+    border: solid 2px #8EE53F;
+}
+
+.about-history img {
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.about-history {
+    grid-row: 1;
+    grid-column: 1;
+    
+}
+.about-now {
+    grid-row: 2;
+    grid-column: 1;
+}
+.about-contact {
+    grid-row: 3;
+    grid-column: 1; 
+}
+
+.about-contact iframe {
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
 

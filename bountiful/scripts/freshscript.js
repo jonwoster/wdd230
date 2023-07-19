@@ -74,7 +74,6 @@ let totalfat = 0.0;
 let totalcalories = 0.0;
 let totalsugar = 0.0;
 let totalcarbs = 0.0;
-// const blanklinevar = document.querySelector(".drinkinstance");
 
 buttonvariable.addEventListener('click', () => {
     // assign date value to the date variable
@@ -96,8 +95,6 @@ buttonvariable.addEventListener('click', () => {
     const currentcalories = "Calories: " + totalcalories;
     const currentsugar = "Sugar: " + totalsugar +" grams";
     const currentprotein = "Protein: " + totalprotein +" grams";
-    // const linevar = " ";
-
 
     // Create the li and span elements
     const nameli = document.createElement("li");
@@ -166,7 +163,7 @@ buttonvariable.addEventListener('click', () => {
     nutritionalulvar.appendChild(caloriesli);
     nutritionalulvar.appendChild(proteinli);
 
-    // If there is a value for special instructions, then include that as well
+    // If there is a value for special instructions, then include that as well. If empty, don't show it.
     if (instructionsvar.value) {
         const instructionsli = document.createElement("li");
         const instructionsspan = document.createElement("span");
@@ -174,15 +171,12 @@ buttonvariable.addEventListener('click', () => {
         instructionsli.appendChild(instructionsspan);
         nutritionalulvar.appendChild(instructionsli);
     }
-    // //put a blank line at the bottom of each list in case they order a 2nd drink
-    // const line = document.createElement("p");
-    // line.textContent = linevar;
-    // blanklinevar.appendChild(line);
 
-
+    // call function to increment the local storage for the count of drinks ordered
+    storedrinkinfo();
 });
 
-// This function gets the fruit names from the calling function and then calculates total nutrients
+// Function gets the fruit names from the calling function and then calculates total nutrients
 function calculatenutrients(fruit1name, fruit2name, fruit3name) {
     //Using the map which was created for nutrients, get the nutrients for each fruit selected
     const fruit1nutrients = nutrients.get(`${fruit1name}`);
@@ -191,10 +185,30 @@ function calculatenutrients(fruit1name, fruit2name, fruit3name) {
 
     //Get totals for each type of nutrient
     totalprotein = Number(fruit1nutrients.protein) + Number(fruit2nutrients.protein) + Number(fruit3nutrients.protein);
+    // console.log("totalprotein", totalprotein);
     totalfat= Number(fruit1nutrients.fat) + Number(fruit2nutrients.fat) + Number(fruit3nutrients.fat);
     totalcalories= Number(fruit1nutrients.calories) + Number(fruit2nutrients.calories) + Number(fruit3nutrients.calories);
     totalsugar= Number(fruit1nutrients.sugar) + Number(fruit2nutrients.sugar) + Number(fruit3nutrients.sugar);
     totalcarbs= Number(fruit1nutrients.carbohydrates) + Number(fruit2nutrients.carbohydrates) + Number(fruit3nutrients.carbohydrates);
+}
+
+// Function uses local storage to increment the running tally of drinks ordered. This should only be called when 
+// a drink has been ordered.
+function storedrinkinfo() {
+    // Get the drinks ordered from local storage
+    let drinksordered= Number(localStorage.getItem("fresh-drinkcounter-ls"));
+    //console.log("drinksordered after getItem= ", drinksordered);  //Debug only
+
+    // If it exists, then increment it to show an additional drink was ordered and save it to local storage
+    if (drinksordered) {
+        //drinks were ordered in the past so just add one to it
+        drinksordered = drinksordered + 1;
+    } else {
+        //drinks were apparently not ordered in the past so, consider this the first drink ordered
+        drinksordered = 1;
+    }
+    //console.log("drinks ordered after if else = ", drinksordered);  //Debug only
+    localStorage.setItem("fresh-drinkcounter-ls", drinksordered);
 }
 
 

@@ -1,20 +1,7 @@
-// let d = new Date();
-// let yearmod = d.getFullYear();
-// let item = document.querySelector("#copyright-year");
-// item.textContent = yearmod;
 
 let lastmod = document.lastModified;
 document.getElementById("last-updated").innerHTML = lastmod;
 //console.log("just after the last mod code");
-
-
-// const datefieldUK = document.querySelector("#header-date");
-// const now = new Date();
-// const dayofweek = now.getDay(); // for determining if we want to display reminder
-// // alert(dayofweek); for debugging
-// const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
-// datefieldUK.innerHTML = `${fulldateUK}`;
-
 
 // Related to the nav //
 function togglemenu() {
@@ -27,23 +14,23 @@ const x = document.getElementById('hamburger-button');
 //console.log("just before onclick");
 x.onclick = togglemenu;
 
+// update the drinks ordered card
+//localStorage.removeItem("fresh-drinkcounter-ls");  //for testing like its a new customer
+// First get the count from local storage
+let drinksordered= localStorage.getItem("fresh-drinkcounter-ls");
 
-// //***************Days since last visit for the footer *********************************
-// // milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
-// const msToDays = 84600000;
+// grab the object for showing the results
+let drinkinfovar = document.querySelector("#drinkcount");
+//console.log("index page drinksordered after getItem= ", drinksordered);  //Debug only
+// If they have ordered drinks before based upon local storage, then show the count
+if (drinksordered) {
+    drinksordered = "Welcome back! So far you have odered " + drinksordered + " Fresh drinks. You're on a roll, let's keep it going!"
+} else {
+    drinksordered = "No drinks ordered so far, but we are ready when you are!"
+}
+drinkinfovar.textContent = drinksordered;
 
-// let today = Date.now();
-// let lastvisitdate= Number(localStorage.getItem("lastvisit-ls"));
-// /* check if lastvisit-ls exists right at the start. If it does, run your script like normal. 
-// If it doesn't set it to the current date and display some kind of message for a first visit. */
 
-// if (lastvisitdate) {
-//     const elapseddays = Math.round((today - lastvisitdate) / msToDays);
-//     document.querySelector('.dayselapsed').textContent = elapseddays;
-// } else {
-//     document.querySelector('.dayselapsed').textContent = "Welcome, it's your first visit!";
-// }
 
-// localStorage.setItem("lastvisit-ls", today);
 
 
